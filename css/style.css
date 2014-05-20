@@ -1,19 +1,24 @@
 
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
 * {
 	font-family: 'Arvo', serif;
 	color: white;
 }
 
 @media only screen and (max-width : 400px) {
-	#rowOne { padding: 0em !important};
+	#rowOne { padding: 2em !important; }
 }
-
-ul li { margin-top: 3em; }
+h1 + span {
+	font-style: italic;
+}
+nav { float: right; padding-right: 10%; font-weight: 700;}
+nav ul li { display: inline-table; margin: 0 3em 3em 0; text-transform: uppercase; border: 3px white solid; border-radius:5px; border-spacing: 1em}
+nav ul li:hover {  -webkit-animation-timing-function:linear; -webkit-animation:buttonfade 0.1s linear; }
 section { padding: 2em 0 5em 0; }
+
 /*IDs*/
 
-#header { padding-left: 8em; color:  black;}
+#header { padding-left: 8em; }
 #rowOne { padding-top: 3em;padding-left: 10em; padding-right: 10em;}
 #LearnMore { padding-top: 6em }
 #circleimg { border-radius: 50% }
@@ -23,3 +28,12 @@ section { padding: 2em 0 5em 0; }
 #title { padding-bottom: 1em;}
 #buttonL { border: 3px solid white; color: white; background-color: transparent; padding: 1em 3em 1em 3em;}
 #footerRow { color: black;}
+
+/*ANIMATION*/
+
+
+@-webkit-keyframes buttonfade
+{
+from {}
+to {opacity: 1; background: blue;}
+}
