@@ -3,12 +3,6 @@
 * {
 	font-family: 'Arvo', serif;
 }
-@media (max-width: 479px) {
-    body {
-    	background-color: red;
-		padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-	}
-}
 
 ul li { margin-top: 3em; }
 
