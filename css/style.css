@@ -1,0 +1,23 @@
+
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,700italic);
+* {
+	font-family: 'Arvo', serif;
+}
+@media (max-width: 479px) {
+    body {
+    	background-color: red;
+		padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	}
+}
+
+ul li { margin-top: 3em; }
+
+
+
+#LearnMore { padding-top: 6em }
+#circleimg { border-radius: 50% }
+#firstRow { background-color: #4F1F91; color: white; padding: 0 0 5em 0; }
+#secondRow { background-color: #4F1FFF; color: white;padding: 5em 0 5em 0; }
+#thirdRow { margin: 0 10em 0em 10em;}
+#title { padding-bottom: 1em;}
+#buttonL { border: 3px solid white; color: white; background-color: transparent; padding: 1em 3em 1em 3em;}
