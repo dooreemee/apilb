@@ -2,15 +2,24 @@
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700,700italic);
 * {
 	font-family: 'Arvo', serif;
+	color: white;
+}
+
+@media only screen and (max-width : 400px) {
+	#rowOne { padding: 0em !important};
 }
 
 ul li { margin-top: 3em; }
-
+section { padding: 2em 0 5em 0; }
 /*IDs*/
+
+#header { padding-left: 8em; color:  black;}
+#rowOne { padding-top: 3em;padding-left: 10em; padding-right: 10em;}
 #LearnMore { padding-top: 6em }
 #circleimg { border-radius: 50% }
-#firstRow { background-color: #4F1F91; color: white; padding: 0 0 5em 0; }
-#secondRow { background-color: #7A52C7; color: white;padding: 5em 0 5em 0; }
+#firstRow { background-color: #4F1F91; background-image: url('../imgs/head.png');  }
+#secondRow { background-color: #7A52C7; }
 #thirdRow { background-color: #0047BE;}
 #title { padding-bottom: 1em;}
 #buttonL { border: 3px solid white; color: white; background-color: transparent; padding: 1em 3em 1em 3em;}
+#footerRow { color: black;}
