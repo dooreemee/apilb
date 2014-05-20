@@ -24,7 +24,7 @@ section { padding: 2em 0 5em 0; }
 #circleimg { border-radius: 50% }
 #firstRow { background-color: #4F1F91; background-image: url('../imgs/head.png');  }
 #secondRow { background-color: #7A52C7; }
-#thirdRow { background-color: #0047BE;}
+#thirdRow { background-color: #C4CBEA;}
 #title { padding-bottom: 1em;}
 #buttonL { border: 3px solid white; color: white; background-color: transparent; padding: 1em 3em 1em 3em;}
-#footerRow { background-color: gray}
+#footerRow { background-color: #41D2D2}
