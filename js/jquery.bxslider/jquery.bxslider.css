@@ -33,9 +33,11 @@
 	/*-moz-box-shadow: 0 0 5px #ccc;
 	-webkit-box-shadow: 0 0 5px #ccc;
 	box-shadow: 0 0 5px #ccc;*/
-	border:  5px solid #fff;
+	margin-left: 25%;
+	max-width: 50%;
+	border:  5px solid #0047BE;
 	left: -5px;
-	background: #fff;
+	background: #0047BE;
 	
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
@@ -91,9 +93,9 @@
 	height: 10px;
 	margin: 0 5px;
 	outline: 0;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
