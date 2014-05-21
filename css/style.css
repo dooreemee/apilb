@@ -15,7 +15,7 @@ nav { float: right; padding-right: 10%; font-weight: 700;}
 nav ul li { display: inline-table; margin: 0 3em 3em 0; text-transform: uppercase; border: 3px white solid; border-radius:5px; border-spacing: 1em; -webkit-transition: all 0.25s linear;}
 nav ul li:hover {  background-color: #7A52C7;  }
 section { padding: 2em 0 5em 0; }
-a:link { color: white; text-decoration: none; }
+a:link, a:hover, a:active { color: white; text-decoration: none; }
 
 /*IDs*/
 
