@@ -57,6 +57,7 @@ font-style:normal;font-weight:900;
 h1 + span {
 	font-style: italic;
 }
+
 nav { float: right; padding-right: 10%; font-weight: 700;}
 nav ul li { display: inline-table; margin: 0 3em 3em 0; text-transform: uppercase; border: 3px white solid; border-radius:5px; border-spacing: 1em; -webkit-transition: all 0.25s linear;}
 nav ul li:hover {  background-color: #7A52C7;  }
@@ -69,14 +70,17 @@ a:link, a:visited, a:hover, a:active { color: white !important; text-decoration:
 
 /*IDs*/
 
-
+#how_title { padding-bottom: 4em; padding-top: 2em}
 #header { padding-left: 8em; }
 #rowOne { padding-top: 3em;padding-left: 10em; padding-right: 10em;}
 #LearnMore { padding-top: 3em }
 #circleimg { border-radius: 50% }
 #firstRow { background-color: #4F1F91; background-image: url('../imgs/head.png'); }
 #secondRow { background-color: #7A52C7; }
-#thirdRow { background-color: #C4CBEA;}
+#thirdRow {background-color: #C4CBEA;}
 #title { padding-bottom: 1em; text-transform: uppercase;}
-#buttonL { border: 3px solid white; color: white; background-color: transparent; padding: 1em 3em 1em 3em;}
+#buttonL { border: 3px solid white; color: white; background-color: transparent; padding: 1em 3em 1em 3em; pad}
 #footerRow { background-color: #474764}
+#mce-EMAIL {color:#474764; min-width: 20%; background-color: white; border: 0.2em white solid; border-radius: 15px; padding: 1em}
+#mc-embedded-subscribe {margin: 3em; background-color: transparent;border: 0.2em white solid; padding: 1em; border-radius: 5px}
+#mc-embedded-subscribe:hover {color: white !important; text-decoration: none !important; background-color: #7A52C7;}

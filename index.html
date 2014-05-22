@@ -14,7 +14,7 @@
 		<nav>
 			<ul id="navigation">
 				<li><a href="#how_title">How does it work?</a></li>
-				<li>Sign me up</li>
+				<li><a href="#signupthx">Sign me up</a></li>
 				<li>Who are you?</li>
 			</ul>
 		</nav>
@@ -32,7 +32,7 @@
 
 				<div class="col-md-6" id="graph">
 				<ul class="droppedHover">
-						<li class="">
+						<li>
 							<h3>Multiple free cloud instances</h3>
 							<p>You can test your code to see if it works while running on multiple free instances. No need to buy provider's expensive load balancers.</p>
 						</li>
@@ -51,7 +51,7 @@
 				</div>
 				<div class="col-md-12" id="LearnMore">
 					<p class="text-center">
-						<button class="btn btn-lg" id="buttonL">Sign-me-up!</button>
+						<a href="#signupthx"><button class="btn btn-lg" id="buttonL">Sign-me-up!</button></a>
 					</p>
 				</div>
 			</div>
@@ -75,35 +75,45 @@
 						<button class="btn btn-lg clickerz" id="buttonL">More Details</button>
 					</p>
 				</div>
-			<span class="faderz">
-				<ul class="usecasedemo">
-						<li>
-							Buy your own domain:
-								<p><code>myproject.com</code></p>
-						</li>
-						<li>
-							Deploy your application to multiple free cloud instances:
-								<p><code>myproject.herokuapp.com</code></p>
-								<p><code>myproject.apphb.com</code></p></li>
-						<li>
-							Register at apilb.com and choose a project name
-								<p><code>myproject</code></p></li>
-						<li>
-							A third level domain will be generated for you:
-								<p><code>myproject.apilb.com</code></p></li>
-						<li>
-						Configure on apilb.com the services you want to balance:
-							<p><code>myproject.apilb.com -> [<br>myproject.herokuapp.com,<br>
-							 myproject.apphb.com<br>]</code></p>
-						</li>
-						<li>
-							Set up a CNAME record on your domain to point to the service domain:
-							<p><code>myproject.com -> myproject.apilb.com</code></p>
-						</li>
-						<li><h4>SUCCESS!</h4>
-						<p>All the incoming traffic to your own domain will be transparently load balanced to your clound instances</p></li>
+				<div class="col-md-6">
+					<span class="faderz">
+					<h3>Hello</h3>
+						<ul class="usecasedemo">
+								<li>
+									Buy your own domain:
+										<p><code>myproject.com</code></p>
+								</li>
+								<li>
+									Deploy your application to multiple free cloud instances:
+										<p><code>myproject.herokuapp.com</code></p>
+										<p><code>myproject.apphb.com</code></p></li>
+								<li>
+									Register at apilb.com and choose a project name
+										<p><code>myproject</code></p></li>
+								<li>
+									A third level domain will be generated for you:
+										<p><code>myproject.apilb.com</code></p></li>
+								<li>
+								Configure on apilb.com the services you want to balance:
+									<p><code>myproject.apilb.com -> [<br>myproject.herokuapp.com,<br>
+									 myproject.apphb.com<br>]</code></p>
+								</li>
+								<li>
+									Set up a CNAME record on your domain to point to the service domain:
+									<p><code>myproject.com -> myproject.apilb.com</code></p>
+								</li>
+								<li><h4>SUCCESS!</h4>
+								<p>All the incoming traffic to your own domain will be transparently load balanced to your clound instances</p></li>
+							</ul>
+					</span>
+			</div>
+			<div class="col-md-6">
+				<span class="faderz">
+					<ul class="usecasedemo">
+						<li>Hello world</li>
 					</ul>
-			</span>
+				</span>
+			</div>
 				</span>
 			<div class="col-md-4 text-center">
 				<img id="circleimg" src="//placehold.it/200x200">
@@ -118,12 +128,23 @@
 
 	<section class="row" id="thirdRow">
 
-		<ul class="bxslider" >
+	<ul class="bxslider" >
 		  <li><img src="//placehold.it/800x200" title="We support heroku" /></li>
 		  <li><img src="//placehold.it/800x200" title="We support Azure" /></li>
 		  <li><img src="//placehold.it/800x200" title="We support Openshift" /></li>
 		  <li><img src="//placehold.it/800x200" title="We support this too"/></li>
 		</ul>
+<div class="col-md-12 text-center" id="signupthx">
+	<div id="mc_embed_signup">
+		<form action="http://twitter.us3.list-manage2.com/subscribe/post?u=22e38cbc23a353a8a4ab789dd&amp;id=47e3d5033c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" >
+			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="We'll inform you by email" required>
+
+			<div style="position: absolute; left: -5000px;"><input type="text" name="b_22e38cbc23a353a8a4ab789dd_47e3d5033c" tabindex="-1" value=""></div>
+		<div><input type="submit" value="Signup" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+		</form>
+	</div>
+</div>
+
 	</section>
 	<section class="row" id="footerRow">
 	  	<footer class="text-center">2014 - dev + fenice</footer> 
