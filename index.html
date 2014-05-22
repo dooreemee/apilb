@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>apilb - load balancing</title>
 	<link rel="stylesheet" href="css/style.css">
+<!-- Daniella <3 -->
 
 </head>
 <body>
@@ -25,44 +26,85 @@
 			<div class="row" id="rowOne">
 				<div class="col-md-6">
 					<h2 class="" id="title">cloud-independent load balancing as a service</h2>
+					<img src="imgs/exp.png" width="500px" /> 
+					
+				</div>
 
-					<h2 class="" id="subtitle">Built to withstand premium warfare</h2>
-
-					<ul class="droppedHover">
+				<div class="col-md-6" id="graph">
+				<ul class="droppedHover">
 						<li class="">
 							<h3>Multiple free cloud instances</h3>
 							<p>You can test your code to see if it works while running on multiple free instances. No need to buy provider's expensive load balancers.</p>
 						</li>
 						<li class="">
 							<h3>Multiple cloud providers</h3>
-<p>							You can balance the incoming traffic to multiple cloud providers or even your local public instance
-						</p>						</li>
+							<p>You can balance the incoming traffic to multiple cloud providers or even your local public instance
+							</p>
+						</li>
 						<li class="">
 							<h3>Free</h3>
-							<p>You can use this service for free because the source is all open.
-							If you want us to host the balancer you can use our free tier option or donate to the project unlock more bandwith</p>
+							<p>You can use this service for free because the source it is an open-source project hosted on github.
+							If you want us to host the balancer you can use the free tier option and donate to the project unlock more bandwith</p>
 							
 						</li>
 					</ul>
 				</div>
-
-				<div class="col-md-6" id="graph"><img src="imgs/exp.png" width="400px" /> <div class="col-md-12" id="LearnMore">
+				<div class="col-md-12" id="LearnMore">
 					<p class="text-center">
 						<button class="btn btn-lg" id="buttonL">Large</button>
 					</p>
-				</div></div>
+				</div>
 			</div>
 						
 	</section>
 	<section class="row" id="secondRow">
+		<h1 class="text-center" id="how_title">How does it work?</h1>
+		<div class="col-md-10 col-md-offset-1 text-center">
+			<p>Based on HAproxy, the load balancer enables you to bounce client request to an array of cloud instances hosted on different clouds</p>
+			<p>We take care of redirecting requests, cookies and all bandwith through our servers to one of the instances and by doing this we can ensure that we evenly share your inbound traffic amonst all your instances.</p><p> It's 100% transparent and 0% bullshit.</p>
+		</div>
+		
+		<span class="col-md-12 text-center">
+		<hr>
+			<h3>Use Case?</h3>
 
-			
-			<h1 class="text-center" id="how_title">How does it work?</h1>
-			
-			<div class="col-md-10 col-md-offset-1 text-center">
-				<p></p>
-
-			</div>
+			<p>OK, so you are a startup and you want to design your API architecture. It should be distributed and scalable from day one.
+			You want to use various free cloud instances and put them behind a load balancer without having to buy expensive services.</p>
+			<div class="col-md-12" id="LearnMore">
+					<p class="text-center">
+						<button class="btn btn-lg clickerz" id="buttonL">Large</button>
+					</p>
+				</div>
+			<span class="faderz">
+				<ul class="usecasedemo">
+						<li>
+							Buy your own domain:
+								<p><code>myproject.com</code></p>
+						</li>
+						<li>
+							Deploy your application to multiple free cloud instances:
+								<p><code>myproject.herokuapp.com</code></p>
+								<p><code>myproject.apphb.com</code></p></li>
+						<li>
+							Register at apilb.com and choose a project name
+								<p><code>myproject</code></p></li>
+						<li>
+							A third level domain will be generated for you:
+								<p><code>myproject.apilb.com</code></p></li>
+						<li>
+						Configure on apilb.com the services you want to balance:
+							<p><code>myproject.apilb.com -> [<br>myproject.herokuapp.com,<br>
+							 myproject.apphb.com<br>]</code></p>
+						</li>
+						<li>
+							Set up a CNAME record on your domain to point to the service domain:
+							<p><code>myproject.com -> myproject.apilb.com</code></p>
+						</li>
+						<li><h4>SUCCESS!</h4>
+						<p>All the incoming traffic to your own domain will be transparently load balanced to your clound instances</p></li>
+					</ul>
+			</span>
+				</span>
 			<div class="col-md-4 text-center">
 				<img id="circleimg" src="//placehold.it/200x200">
 			</div>
@@ -75,6 +117,7 @@
 	</section>
 
 	<section class="row" id="thirdRow">
+
 		<ul class="bxslider" >
 		  <li><img src="//placehold.it/800x200" title="We support heroku" /></li>
 		  <li><img src="//placehold.it/800x200" title="We support Azure" /></li>
@@ -83,7 +126,7 @@
 		</ul>
 	</section>
 	<section class="row" id="footerRow">
-	  	<footer class="text-center">2014 - Bettiolo + fenice</footer> 
+	  	<footer class="text-center">2014 - dev + fenice</footer> 
 	</section>
 </div>
 </body>
@@ -109,6 +152,14 @@
   	mode: 'horizontal',
   	captions: true
   });
+});
+</script>
+<script>
+	$(".faderz").fadeToggle();
+  $(".clickerz").click(function(){
+    $(".clickerz").fadeToggle();
+    $(".faderz").fadeToggle();
+    
 });
 </script>
 </html>
