@@ -13,7 +13,7 @@
 	<section class="row" id="firstRow">
 		<nav>
 			<ul id="navigation">
-				<li><a href="#how_title">How does it work?</a></li>
+				<li><a href="#how_title"><button class="btn-lg" id="buttonL">How does it work?</button></a></li>
 				<li><a href="#signupthx">Sign me up</a></li>
 				<li>Who are you?</li>
 			</ul>
@@ -24,13 +24,9 @@
 			<span>Load balancing - the easy way</span>
 			</div>
 			<div class="row" id="rowOne">
-				<div class="col-md-6">
+				<div class="col-md-12">
 					<h2 class="" id="title">cloud-independent load balancing as a service</h2>
-					<img src="imgs/exp.png" width="500px" /> 
-					
-				</div>
-
-				<div class="col-md-6" id="graph">
+					<!-- <img src="imgs/exp.png" width="500px" /> -->
 				<ul class="droppedHover">
 						<li>
 							<h3>Multiple free cloud instances</h3>
@@ -51,7 +47,7 @@
 				</div>
 				<div class="col-md-12" id="LearnMore">
 					<p class="text-center">
-						<a href="#signupthx"><button class="btn btn-lg" id="buttonL">Sign-me-up!</button></a>
+						<a href="#signupthx"><button class="btn btn-lg" id="buttonL">AWESOME</button></a>
 					</p>
 				</div>
 			</div>
@@ -59,14 +55,16 @@
 	</section>
 	<section class="row" id="secondRow">
 		<h1 class="text-center" id="how_title">How does it work?</h1>
-		<div class="col-md-10 col-md-offset-1 text-center">
+		<hr width="40%" class="hr-spacer">
+		<div class="col-md-10 col-md-offset-1 text-center" id="how_itworks">
 			<p>Based on HAproxy, the load balancer enables you to bounce client request to an array of cloud instances hosted on different clouds</p>
 			<p>We take care of redirecting requests, cookies and all bandwith through our servers to one of the instances and by doing this we can ensure that we evenly share your inbound traffic amonst all your instances.</p><p> It's 100% transparent and 0% bullshit.</p>
 		</div>
 		
 		<span class="col-md-12 text-center">
-		<hr>
-			<h3>Use Case?</h3>
+		
+			<h1>Use Case?</h1>
+		<hr width="40%" class="hr-spacer">
 
 			<p>OK, so you are a startup and you want to design your API architecture. It should be distributed and scalable from day one.
 			You want to use various free cloud instances and put them behind a load balancer without having to buy expensive services.</p>
@@ -109,36 +107,38 @@
 			</div>
 			<div class="col-md-6">
 				<span class="faderz">
-				<h3>Real World Scenario</h3>
+				<h3>Real Life Scenario</h3>
 					<ul class="usecasedemo">
 						<li>H</li>
 					</ul>
 				</span>
 			</div>
 				</span>
-			<div class="col-md-4 text-center">
-				<img id="circleimg" src="//placehold.it/200x200">
-			</div>
-			<div class="col-md-4 text-center">
-				<img id="circleimg" src="//placehold.it/200x200">
-			</div>
-			<div class="col-md-4 text-center">
-				<img id="circleimg" src="//placehold.it/200x200">
-			</div>
+			
 	</section>
-
+	<section class="row" id="thirdRow" >
+		asd
+	</section>
 	<section class="row" id="thirdRow">
-
-	<ul class="bxslider" >
+		<div class="col-md-4 text-center">
+				<img id="circleimg" src="//placehold.it/200x200">
+			</div>
+			<div class="col-md-4 text-center" >
+				<img id="circleimg-whitebg" src="http://icons.iconarchive.com/icons/visualpharm/icons8-metro-style/512/Weather-Clouds-icon.png">
+			</div>
+			<div class="col-md-4 text-center">
+				<img id="circleimg" src="http://worstframeworkever.com/images/github_icon.png">
+		</div>
+	<!--<ul class="bxslider" >
 		  <li><img src="//placehold.it/800x200" title="We support heroku" /></li>
 		  <li><img src="//placehold.it/800x200" title="We support Azure" /></li>
 		  <li><img src="//placehold.it/800x200" title="We support Openshift" /></li>
 		  <li><img src="//placehold.it/800x200" title="We support this too"/></li>
-		</ul>
+		</ul>-->
 <div class="col-md-12 text-center" id="signupthx">
 	<div id="mc_embed_signup">
 		<form action="http://twitter.us3.list-manage2.com/subscribe/post?u=22e38cbc23a353a8a4ab789dd&amp;id=47e3d5033c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" >
-			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="We'll inform you by email" required>
+			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="News by email" required>
 
 			<div style="position: absolute; left: -5000px;"><input type="text" name="b_22e38cbc23a353a8a4ab789dd_47e3d5033c" tabindex="-1" value=""></div>
 		<div><input type="submit" value="Signup" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
@@ -179,8 +179,9 @@
 <script>
 	$(".faderz").fadeToggle();
   $(".clickerz").click(function(){
-    $(".clickerz").fadeToggle();
-    $(".faderz").fadeToggle();
+     $(".faderz").fadeToggle();
+     if ($(".clickerz").text() == "More Details") { $(".clickerz").text("Less Details") }
+     	else { $(".clickerz").text("More Details") };
     
 });
 </script>
