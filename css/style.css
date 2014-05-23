@@ -54,6 +54,9 @@ font-style:normal;font-weight:900;
 @media only screen and (max-width : 400px) {
 	#rowOne { padding: 2em !important; }
 }
+@media only screen and (max-width : 992px) {
+	#circleimg { margin: 2em !important; }
+}
 h1 + span {
 	font-style: italic;
 }
