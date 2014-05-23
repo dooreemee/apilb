@@ -24,7 +24,7 @@
 			<span>Load balancing - the easy way</span>
 			</div>
 			<div class="row" id="rowOne">
-				<div class="col-md-12">
+				<div class="col-md-8">
 					<h2 class="" id="title">cloud-independent load balancing as a service</h2>
 					<!-- <img src="imgs/exp.png" width="500px" /> -->
 				<ul class="droppedHover">
@@ -58,16 +58,17 @@
 		<hr width="40%" class="hr-spacer">
 		<div class="col-md-10 col-md-offset-1 text-center" id="how_itworks">
 			<p>Based on HAproxy, the load balancer enables you to bounce client request to an array of cloud instances hosted on different clouds</p>
-			<p>We take care of redirecting requests, cookies and all bandwith through our servers to one of the instances and by doing this we can ensure that we evenly share your inbound traffic amonst all your instances.</p><p> It's 100% transparent and 0% bullshit.</p>
+			<p>We take care of redirecting requests, cookies and all bandwith through our servers to one of the instances and by doing this we can ensure that we evenly share your inbound traffic amongst all your instances.</p><p> It's 100% transparent and 0% bullshit.</p>
 		</div>
 		
 		<span class="col-md-12 text-center">
 		
 			<h1>Use Case?</h1>
 		<hr width="40%" class="hr-spacer">
-
+		<div class="col-md-10 col-md-offset-1 text-center" id="how_itworks">
 			<p>OK, so you are a startup and you want to design your API architecture. It should be distributed and scalable from day one.
 			You want to use various free cloud instances and put them behind a load balancer without having to buy expensive services.</p>
+			</div>
 			<div class="col-md-12" id="LearnMore">
 					<p class="text-center">
 						<button class="btn btn-lg clickerz" id="buttonL">More Details</button>
@@ -108,8 +109,15 @@
 			<div class="col-md-6">
 				<span class="faderz">
 				<h3>Real Life Scenario</h3>
+					<p>Navigate to <a href="http://example.apilb.com"> our example apilb site</a> This is load balanced to the following free cloud instances:</p>
 					<ul class="usecasedemo">
-						<li>H</li>
+						<li><code>node-echo.azurewebsites.net</code></li>
+						<li><code>node-echo2.herokuapp.com</code></li>
+						<li><code>node-echo.apphb.com</code></li>
+						<li><code>nodeecho-apilb.rhcloud.com</code></li>
+
+						<li>If you refresh the site you will see how the traffic is transparently going to different cloud providers on each refresh</li>
+
 					</ul>
 				</span>
 			</div>
@@ -117,7 +125,7 @@
 			
 	</section>
 	<section class="row" id="thirdRow" >
-		asd
+		.
 	</section>
 	<section class="row" id="thirdRow">
 		<div class="col-md-4 text-center">
