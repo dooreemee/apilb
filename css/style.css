@@ -62,7 +62,6 @@ a:link, a:visited, a:hover, a:active { color: white !important; text-decoration:
 /*IDs*/
 
 #how_title { padding-top: 2em; }
-#how_itworks { padding:2em; background-color: #207F60; border: 2px solid #35D4A0;}
 #header { padding-left: 8em; }
 #rowOne { padding-top: 3em;padding-left: 10em; padding-right: 10em; }
 #LearnMore { padding-top: 3em }
