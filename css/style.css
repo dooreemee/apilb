@@ -68,7 +68,7 @@ a:link, a:visited, a:hover, a:active { color: white !important; text-decoration:
 #LearnMore { padding-top: 3em }
 #circleimg { border-radius: 50%; width: 200px; height: 200px; background-color: black; }
 #circleimg-whitebg { background-color: white; padding:2em 1.5em 1.5em 1.5em; border-radius: 50%; width: 200px; height: 200px; }
-#firstRow { height: 100%; background-color: #2E2047; background-image: url('../imgs/hesad.png'); }
+#firstRow { height: 100%; background-color: #2E2047; background-image: /*url('../imgs/hesad.png'); */}
 #secondRow { background-color: #5D6D87; }
 #thirdRow {background-color: #3F2545;}
 #fourthRow {background-color: #006E4A;}
