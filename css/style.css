@@ -77,5 +77,5 @@ a:link, a:visited, a:hover, a:active { color: white !important; text-decoration:
 #footerRow { background-color: #474764}
 #signupthx { padding-top: 3em;}
 #mce-EMAIL {color:#474764; min-width: 20%; background-color: white; border: 0.2em white solid; border-radius: 15px; padding: 1em}
-#mc-embedded-subscribe {margin: 3em; background-color: transparent;border: 0.2em white solid; padding: 1em; border-radius: 5px}
+#mc-embedded-subscribe {margin: 3em; background-color: transparent;border: 2px white solid; padding: 1em; border-radius: 5px}
 #mc-embedded-subscribe:hover { background-color: rgba(120, 220, 90, 20); -webkit-transition: all 0.25s linear;}
