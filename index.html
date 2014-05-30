@@ -79,7 +79,7 @@
 					<h3>Setup Scenario</h3>
 					<p>Buy your own domain, deploy your apps to any PaaS (Heroku, Apphb, OpenShift etc) and signup to apilb then:</p>
 					<div class="term">
-					<span class="usecasedemo">$ curl -X POST "username:password" apilb.com/routes.json <br>
+					<span class="usecasedemo">$ curl -X POST --user "username:password" https://apilb.com/routes.json <br>
 					{ "domain":"myproject.apilb.com", "routes": ["myproject.herokuapp.com","myproject.apphb.com"] }</span>
 					</div>
 								<h4>SUCCESS!</h4>
