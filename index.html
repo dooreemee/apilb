@@ -77,50 +77,31 @@
 				<div class="col-md-6">
 					<span class="faderz">
 					<h3>Setup Scenario</h3>
-						<ul class="usecasedemo">
-								<li>
-									Buy your own domain:
-										<p><code>myproject.com</code></p>
-								</li>
-								<li>
-									Deploy your application to multiple free cloud instances:
-										<p><code>myproject.herokuapp.com</code></p>
-										<p><code>myproject.apphb.com</code></p></li>
-								<li>
-									Register at apilb.com and choose a project name
-										<p><code>myproject</code></p></li>
-								<li>
-									A third level domain will be generated for you:
-										<p><code>myproject.apilb.com</code></p></li>
-								<li>
-								Configure on apilb.com the services you want to balance:
-									<p><code>myproject.apilb.com -> [<br>myproject.herokuapp.com,<br>
-									 myproject.apphb.com<br>]</code></p>
-								</li>
-								<li>
-									Set up a CNAME record on your domain to point to the service domain:
-									<p><code>myproject.com -> myproject.apilb.com</code></p>
-								</li>
-								<li><h4>SUCCESS!</h4>
-								<p>All the incoming traffic to your own domain will be transparently load balanced to your clound instances</p></li>
-							</ul>
+					<p>Buy your own domain, deploy your apps to any PaaS (Heroku, Apphb, OpenShift etc) and signup to apilb then:</p>
+					<div class="term">
+					<span class="usecasedemo">$ curl -X POST "username:password" apilb.com/routes.json <br>
+					{ "domain":"myproject.apilb.com", "routes": ["myproject.herokuapp.com","myproject.apphb.com"] }</span>
+					</div>
+								<h4>SUCCESS!</h4>
+									<p>Set up a CNAME record on your domain to point to the service domain:</p>
+									<p>myproject.com -> myproject.apilb.com</p>
+								<p>All the incoming traffic to your own domain will be transparently load balanced to your clound instances</p></li>						
 					</span>
 			</div>
 			<div class="col-md-6">
 				<span class="faderz">
 				<h3>Real Life Scenario</h3>
 					<p>Navigate to <a href="http://example.apilb.com" target="_blank"> <em>our example apilb site</em></a> <br> This is load balanced to the following free cloud instances:</p>
-					<ul class="usecasedemo">
-						<li><code>node-echo.azurewebsites.net</code></li>
-						<li><code>node-echo2.herokuapp.com</code></li>
-						<li><code>node-echo.apphb.com</code></li>
-						<li><code>nodeecho-apilb.rhcloud.com</code></li>
-
-						<li>If you refresh the site you will see how the traffic is transparently going to different cloud providers on each refresh</li>
-
-					</ul>
-				</span>
-			</div>
+					<div class="term">
+						<span class="usecasedemo">
+							node-echo.azurewebsites.net<br>
+							node-echo2.herokuapp.com<br>
+							node-echo.apphb.com<br>
+							nodeecho-apilb.rhcloud.com
+						</span>
+					</div>
+					<h4>DONE! </h4>
+				<p>If you refresh the site you will see how the traffic is transparently going to different cloud providers on each refresh</p>
 				</span>
 			
 	</section>

@@ -57,8 +57,9 @@ section { padding: 2em 0 5em 0; }
 a:link, a:visited, a:hover, a:active { color: white !important; text-decoration: none !important; } 
 #buttonL:hover { background-color: rgba(120, 220, 90, 20); -webkit-transition: all 0.25s linear;}
 /*CLASSES*/
-.usecasedemo {list-style: none; margin-left: -2em}
+.usecasedemo { color:black; font-weight: 700; position: relative; top: 5em;}
 .faderz { opacity: 0.1; }
+.term {background: url('../imgs/term.png'); repeat: no-repeat; width: 623px; height: 320px;}
 
 /*IDs*/
 
