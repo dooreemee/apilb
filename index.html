@@ -108,5 +108,9 @@
   	captions: true
   });
 });
+
+$(window).on("blur", function(e) { $("title").html("HEY COME BACK"); } );
+
+$(window).on("focus", function(e) { $("title").html("APILB - Api doing Loadbalancing"); } );
 </script>
 </html>
